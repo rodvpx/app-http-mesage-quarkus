@@ -166,7 +166,7 @@ public class MessageService {
 
 Criação de uma nova mensagem com `sender` e `content`. O servidor retorna o objeto completo com `id` e `timestamp` gerados.
 
-![POST 201 Created](img/status_201_mensagem_criada_enviada.png)
+![POST 201 Created](/img/status%20201%20mensagem%20criada_enviada.png)
 
 **Request Body:**
 ```json
@@ -192,7 +192,7 @@ Criação de uma nova mensagem com `sender` e `content`. O servidor retorna o ob
 
 Retorna a lista completa de mensagens armazenadas em memória.
 
-![GET 200 OK todas as mensagens](img/status_200_todas_as_mensagens.png)
+![GET 200 OK todas as mensagens](/img/status%20200%20todas%20as%20mensagens.png)
 
 **Response Body:**
 ```json
@@ -218,7 +218,7 @@ Retorna a lista completa de mensagens armazenadas em memória.
 
 Quando não há mensagens armazenadas, o servidor retorna `204 No Content` sem corpo.
 
-![GET 204 No Content lista vazia](img/Status_204_lista_vazia_de_mensagens.png)
+![GET 204 No Content lista vazia](/img/Status%20204%20lista%20vazia%20de%20mensagens.png)
 
 ---
 
@@ -226,7 +226,7 @@ Quando não há mensagens armazenadas, o servidor retorna `204 No Content` sem c
 
 Busca de uma mensagem específica pelo seu `id`.
 
-![GET 200 OK mensagem por id](img/status_200_mensagem_encontrada_por_id.png)
+![GET 200 OK mensagem por id](/img/status%20200%20mensagem%20encontrada%20por%20id.png)
 
 **Requisição:** `GET http://localhost:8080/message/2`
 
@@ -246,7 +246,7 @@ Busca de uma mensagem específica pelo seu `id`.
 
 Quando o `id` informado não existe na lista em memória.
 
-![GET 404 Not Found](img/status_404_message_não_encontrada.png)
+![GET 404 Not Found](/img/status%20404%20message%20não%20encontrada.png)
 
 **Requisição:** `GET http://localhost:8080/message/1`  
 **Resposta:** `404 Not Found` — sem corpo.
@@ -257,7 +257,7 @@ Quando o `id` informado não existe na lista em memória.
 
 Remoção bem-sucedida de uma mensagem existente.
 
-![DELETE 204 No Content](img/status_204_mensagem_deletada.png)
+![DELETE 204 No Content](/img/status%20204%20mensagem%20deletada.png)
 
 **Requisição:** `DELETE http://localhost:8080/message/2`  
 **Resposta:** `204 No Content` — sem corpo.
@@ -268,7 +268,7 @@ Remoção bem-sucedida de uma mensagem existente.
 
 Tentativa de deletar uma mensagem com `id` inexistente (ou já removida).
 
-![DELETE 404 Not Found](img/status_404_mensagem_não_encontrada_para_deletar.png)
+![DELETE 404 Not Found](/img/status%20404%20mensagem%20não%20encontrada%20para%20deletar.png)
 
 **Requisição:** `DELETE http://localhost:8080/message/1`  
 **Resposta:** `404 Not Found` — sem corpo.
